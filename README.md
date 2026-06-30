@@ -11,6 +11,7 @@ is paid to the beneficiary via `emit_transfer` and the SLA closes.
 The verb is **"bond a promise → consensus monitoring → automatic penalty on breach"** — recurring
 verification with money on the line, not a one-shot judgment.
 
+- **Live demo:** https://slabond.pages.dev
 - **Contract (Bradbury, chain 4221):** `0x8AF9Ee3958C858472F7690a1454a5775bA4391d7`
 - **Deployed from:** `rivale` (`0xc388…51A44`)
 - **Explorer:** https://explorer-bradbury.genlayer.com/contract/0x8AF9Ee3958C858472F7690a1454a5775bA4391d7
