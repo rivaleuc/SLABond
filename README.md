@@ -2,6 +2,8 @@
 
 **A bonded SLA that auto-pays its beneficiary on a consensus-detected breach.**
 
+[![GenLayer](https://img.shields.io/badge/GenLayer-Bradbury-ff4d6d)](https://genlayer.com) [![chainId](https://img.shields.io/badge/chainId-4221-4dd0e1)](https://docs.genlayer.com) [![contract](https://img.shields.io/badge/contract-Python%20GenVM-8a63d2)](https://docs.genlayer.com) [![tests](https://img.shields.io/badge/tests-5%2F5%20passing-3fb950)](tests) [![frontend](https://img.shields.io/badge/frontend-React%20%2B%20Vite%20%2B%20genlayer--js-22a6f2)](app) [![live](https://img.shields.io/badge/live-slabond.pages.dev-f59e0b)](https://slabond.pages.dev) [![License](https://img.shields.io/badge/license-MIT-2dd4bf)](LICENSE)
+
 A provider posts an SLA: a live URL, a plain-language promise about it (uptime, status, freshness…), a
 beneficiary, and a **bond**. Anyone can `check`: every validator independently fetches the URL now and
 judges whether the promise still holds; the outcome is accepted only when validators agree on the
