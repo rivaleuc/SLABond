@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* ----- SLABond palette: sky uptime + cyan, near-black ----- */
+@theme {
+  --color-background: #050a10;
+  --color-surface: #08111c;
+  --color-card: #0b1622;
+  --color-border: #173049;
+  --color-foreground: #e6f1fb;
+  --color-muted: #84a0bb;
+
+  --color-primary: #38bdf8;            /* sky-400 — uptime / monitor */
+  --color-primary-foreground: #04141f;
+  --color-accent: #22d3ee;             /* cyan-400 — bond */
+
+  --color-true: #34d399;               /* holds */
+  --color-false: #fb7185;              /* breached */
+  --color-unverifiable: #fbbf24;
+  --color-ring: #38bdf8;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(calc(-100% - var(--gap, 1rem))); } }
+@keyframes gradient-x { to { background-position: 200% center; } }
+@keyframes meteor { 0% { transform: rotate(215deg) translateX(0); opacity: 1; } 70% { opacity: 1; } 100% { transform: rotate(215deg) translateX(-560px); opacity: 0; } }
+@keyframes shiny { 0% { background-position: calc(-100% - var(--shiny-w, 100px)) 0; } 100% { background-position: calc(100% + var(--shiny-w, 100px)) 0; } }
+@keyframes scan { 0% { transform: translateY(-120%); } 100% { transform: translateY(120%); } }
+@keyframes pulse-ring { 0% { transform: scale(.8); opacity: .5; } 100% { transform: scale(2.2); opacity: 0; } }
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: color-mix(in oklab, var(--color-primary) 32%, transparent); }
+}
